@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food"
+    android:foregroundGravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.dietappsecond.Main"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="45dp" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="100dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Register"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="True"
+        android:layout_gravity="bottom"
+        android:layout_margin="90dp"
+        android:gravity="center"
+        android:onClick="close"
+        android:text="Exit"
+        android:textStyle="italic" />
+
+</FrameLayout>
